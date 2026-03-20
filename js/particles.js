@@ -20,7 +20,7 @@
     const mouse = { x: 0, y: 0, targetX: 0, targetY: 0 };
 
     // --- Create Particles ---
-    const particleCount = 120;
+    const particleCount = 80;
     const particleGeometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const sizes = new Float32Array(particleCount);
@@ -38,11 +38,11 @@
 
     // Custom particle material with glow
     const particleMaterial = new THREE.PointsMaterial({
-        size: 2,
+        size: 0.8,
         sizeAttenuation: true,
         color: 0x00f5ff,
         transparent: true,
-        opacity: 0.5,
+        opacity: 0.35,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
     });
@@ -51,7 +51,7 @@
     scene.add(particles);
 
     // --- Create secondary particles ---
-    const particleCount2 = 60;
+    const particleCount2 = 40;
     const particleGeometry2 = new THREE.BufferGeometry();
     const positions2 = new Float32Array(particleCount2 * 3);
 
@@ -65,11 +65,11 @@
     particleGeometry2.setAttribute('position', new THREE.BufferAttribute(positions2, 3));
 
     const particleMaterial2 = new THREE.PointsMaterial({
-        size: 1.2,
+        size: 0.6,
         sizeAttenuation: true,
         color: 0x8b5cf6,
         transparent: true,
-        opacity: 0.35,
+        opacity: 0.2,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
     });
@@ -82,14 +82,14 @@
     const shapeMaterial = new THREE.MeshBasicMaterial({
         color: 0x00f5ff,
         transparent: true,
-        opacity: 0.06,
+        opacity: 0.04,
         wireframe: true,
     });
 
     const shapeMaterial2 = new THREE.MeshBasicMaterial({
         color: 0x8b5cf6,
         transparent: true,
-        opacity: 0.05,
+        opacity: 0.03,
         wireframe: true,
     });
 
@@ -157,7 +157,7 @@
     const lineMaterial = new THREE.LineBasicMaterial({
         color: 0x00f5ff,
         transparent: true,
-        opacity: 0.04,
+        opacity: 0.025,
         blending: THREE.AdditiveBlending,
     });
 
