@@ -20,7 +20,7 @@
     const mouse = { x: 0, y: 0, targetX: 0, targetY: 0 };
 
     // --- Create Particles ---
-    const particleCount = 80;
+    const particleCount = 120;
     const particleGeometry = new THREE.BufferGeometry();
     const positions = new Float32Array(particleCount * 3);
     const sizes = new Float32Array(particleCount);
@@ -38,11 +38,11 @@
 
     // Custom particle material with glow
     const particleMaterial = new THREE.PointsMaterial({
-        size: 0.8,
+        size: 1.5,
         sizeAttenuation: true,
         color: 0x00f5ff,
         transparent: true,
-        opacity: 0.35,
+        opacity: 0.6,
         blending: THREE.AdditiveBlending,
         depthWrite: false,
     });
@@ -82,14 +82,14 @@
     const shapeMaterial = new THREE.MeshBasicMaterial({
         color: 0x00f5ff,
         transparent: true,
-        opacity: 0.04,
+        opacity: 0.08,
         wireframe: true,
     });
 
     const shapeMaterial2 = new THREE.MeshBasicMaterial({
         color: 0x8b5cf6,
         transparent: true,
-        opacity: 0.03,
+        opacity: 0.06,
         wireframe: true,
     });
 
