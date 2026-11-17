@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bikan Chowdhury — Portfolio</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="description" content="Portfolio of Bikan Chowdhury — B.Tech student at NIT Agartala, founder of WebCloner.tech. Full-stack web development, SaaS products and data analysis." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Cursor follower (native cursor stays visible) -->
+  <div class="cursor-follower" aria-hidden="true"></div>
+
+  <!-- Particle field -->
+  <canvas id="particles" aria-hidden="true"></canvas>
+
+  <!-- Grain texture -->
+  <div class="grain" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo" data-cursor="hover">
+        <span class="logo-mark">B</span>
+        <span class="logo-word">Bikan<span class="logo-dot">.</span></span>
+      </a>
+      <nav class="nav-links" id="navLinks">
+        <a href="#hero" class="nav-link active" data-cursor="hover">Home</a>
+        <a href="#skills" class="nav-link" data-cursor="hover">Skills</a>
+        <a href="#projects" class="nav-link" data-cursor="hover">Projects</a>
+        <a href="#education" class="nav-link" data-cursor="hover">Education</a>
+        <a href="Resume_Tech.pdf" class="nav-link nav-resume" data-cursor="hover" target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false" data-cursor="hover">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="hero">
+      <div class="hero-grid">
+        <div class="hero-left">
+          <p class="hero-eyebrow intro-item">
+            <span class="status-dot"></span> Available for opportunities
+          </p>
+          <h1 class="hero-name intro-item" aria-label="Bikan Chowdhury">
+            <span class="line">Bikan</span>
+            <span class="line line-serif">Chowdhury<span class="hero-period">.</span></span>
+          </h1>
+          <p class="hero-role intro-item">
+            Full-stack developer &amp; founder — building production SaaS at
+            <a href="https://webcloner.tech" target="_blank" rel="noopener" class="link-mark" data-cursor="hover">WebCloner.tech</a>
+          </p>
+          <p class="hero-sub intro-item">
+            B.Tech student at <strong>NIT Agartala</strong> crafting web products with
+            Next.js &amp; Node.js — equal parts engineering, design and data.
+          </p>
+          <div class="hero-cta intro-item">
+            <a href="Resume_Tech.pdf" class="btn btn-solid" data-cursor="hover" target="_blank" rel="noopener">
+              Download Resume
+            </a>
+            <a href="https://github.com/bikan-chowdhury" class="btn btn-outline" data-cursor="hover" target="_blank" rel="noopener">
+              GitHub ↗
+            </a>
+            <a href="https://linkedin.com/in/bikan-chowdhury/" class="btn btn-outline" data-cursor="hover" target="_blank" rel="noopener">
+              LinkedIn ↗
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-right intro-item">
+          <div class="photo-frame" data-cursor="hover">
+            <div class="photo-arch">
+              <img src="assets/profile.jpg" alt="Bikan Chowdhury" width="460" height="460" />
+            </div>
+            <span class="sticker sticker-top">NITA ’27</span>
+            <span class="sticker sticker-bottom">WebCloner ↗</span>
+            <span class="photo-blob" aria-hidden="true"></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-meta intro-item">
+        <span>NIT Agartala</span><span class="meta-sep">✦</span>
+        <span>B.Tech 2023 — 2027</span><span class="meta-sep">✦</span>
+        <span>Full-stack · SaaS · Data</span>
+      </div>
+    </section>
+
+    <!-- ============ MARQUEE ============ -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee-track">
+        <span>Next.js</span><span class="mq-dot">●</span>
+        <span>Node.js</span><span class="mq-dot">●</span>
+        <span>React</span><span class="mq-dot">●</span>
+        <span>Three.js</span><span class="mq-dot">●</span>
+        <span>JavaScript</span><span class="mq-dot">●</span>
+        <span>Python</span><span class="mq-dot">●</span>
+        <span>MongoDB</span><span class="mq-dot">●</span>
+        <span>PostgreSQL</span><span class="mq-dot">●</span>
+        <span>SaaS</span><span class="mq-dot">●</span>
+        <span>Data Analysis</span><span class="mq-dot">●</span>
+        <span>Next.js</span><span class="mq-dot">●</span>
+        <span>Node.js</span><span class="mq-dot">●</span>
+        <span>React</span><span class="mq-dot">●</span>
+        <span>Three.js</span><span class="mq-dot">●</span>
+        <span>JavaScript</span><span class="mq-dot">●</span>
+        <span>Python</span><span class="mq-dot">●</span>
+        <span>MongoDB</span><span class="mq-dot">●</span>
+        <span>PostgreSQL</span><span class="mq-dot">●</span>
+        <span>SaaS</span><span class="mq-dot">●</span>
+        <span>Data Analysis</span><span class="mq-dot">●</span>
+      </div>
+    </div>
+
+    <!-- ============ SKILLS ============ -->
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <span class="section-index">01 / Skills</span>
+        <h2 class="section-title">The <em>toolbox</em> behind the work</h2>
+        <p class="section-sub">Languages, frameworks and tools I reach for daily.</p>
+      </div>
+
+      <div class="skills-grid">
+        <article class="skill-card tilt reveal" data-cursor="hover">
+          <span class="skill-num">A.</span>
+          <h3>Programming Languages</h3>
+          <ul class="tags">
+            <li>C</li><li>C++</li><li>Python</li><li>JavaScript</li><li>SQL</li>
+          </ul>
+        </article>
+
+        <article class="skill-card tilt reveal" data-cursor="hover">
+          <span class="skill-num">B.</span>
+          <h3>Web Development</h3>
+          <ul class="tags">
+            <li>Next.js</li><li>Node.js</li><li>React.js</li><li>HTML</li><li>CSS</li>
+          </ul>
+        </article>
+
+        <article class="skill-card tilt reveal" data-cursor="hover">
+          <span class="skill-num">C.</span>
+          <h3>Databases &amp; Tools</h3>
+          <ul class="tags">
+            <li>MongoDB</li><li>PostgreSQL</li><li>Git</li><li>GitHub</li><li>MS Excel</li>
+          </ul>
+        </article>
+
+        <article class="skill-card tilt reveal" data-cursor="hover">
+          <span class="skill-num">D.</span>
+          <h3>Core Competencies</h3>
+          <ul class="tags">
+            <li>OOP</li><li>Problem-Solving</li><li>Data Analysis</li><li>Team Collaboration</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ PROJECTS ============ -->
+    <section class="section section-alt" id="projects">
+      <div class="section-head reveal">
+        <span class="section-index">02 / Projects</span>
+        <h2 class="section-title">Selected <em>builds</em></h2>
+        <p class="section-sub">Products I've designed, built and shipped.</p>
+      </div>
+
+      <div class="projects-list">
+        <article class="project-card tilt reveal" data-cursor="hover">
+          <div class="project-top">
+            <span class="project-type">SaaS · Production</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://webcloner.tech" target="_blank" rel="noopener" data-cursor="hover">
+              WebCloner.tech
+            </a>
+          </h3>
+          <p class="project-desc">
+            A production-grade SaaS platform that exports publicly accessible websites
+            into downloadable ZIP files, with WordPress and Blogger export support.
+            Designed the Next.js frontend, built the Node.js cloning engine and APIs,
+            implemented authentication, integrated a payment gateway, project management,
+            bulk processing and production deployment workflows.
+          </p>
+          <ul class="tags">
+            <li>Next.js</li><li>Node.js</li><li>Auth</li><li>Payments</li><li>SaaS</li>
+          </ul>
+          <span class="project-badge">Founder &amp; Owner</span>
+        </article>
+
+        <article class="project-card tilt reveal" data-cursor="hover">
+          <div class="project-top">
+            <span class="project-type">SaaS · Live product</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="project-title">
+            <a href="https://rosenote.live" target="_blank" rel="noopener" data-cursor="hover">
+              RoseNote.live
+            </a>
+          </h3>
+          <p class="project-desc">
+            A digital gifting platform that sends a personalized 3D rose with a written
+            message and optional voice note — arranged and delivered instantly by email
+            or a private shareable link with QR code. Built with Next.js and an
+            interactive Three.js rose viewer, in-browser voice recording, one-time
+            Polar checkout and no accounts. Ships with full SEO: structured data,
+            Open Graph, blog and legal pages.
+          </p>
+          <ul class="tags">
+            <li>Next.js</li><li>Three.js</li><li>Tailwind CSS</li><li>Polar Payments</li><li>Cloudflare</li>
+          </ul>
+          <span class="project-badge">Live product</span>
+        </article>
+
+        <article class="project-card tilt reveal" data-cursor="hover">
+          <div class="project-top">
+            <span class="project-type">Data Analytics</span>
+            <span class="project-arrow" aria-hidden="true">↗</span>
+          </div>
+          <h3 class="project-title">Customer Shopping Behavior &amp; Analytics</h3>
+          <p class="project-desc">
+            Designed and executed a corporate-level data analytics pipeline analyzing
+            retail customer behavior — data preprocessing in Python, advanced database
+            querying in PostgreSQL, and interactive visualization in Power BI.
+          </p>
+          <ul class="tags">
+            <li>Python</li><li>PostgreSQL</li><li>Power BI</li><li>Data Analysis</li>
+          </ul>
+          <span class="project-badge">End-to-end pipeline</span>
+        </article>
+      </div>
+    </section>
+
+    <!-- ============ EDUCATION ============ -->
+    <section class="section" id="education">
+      <div class="section-head reveal">
+        <span class="section-index">03 / Education</span>
+        <h2 class="section-title">Where it's <em>happening</em></h2>
+        <p class="section-sub">Building the foundation while shipping real products.</p>
+      </div>
+
+      <article class="edu-card tilt reveal" data-cursor="hover">
+        <div class="edu-year">2023<span>—</span>2027</div>
+        <div class="edu-body">
+          <h3>Bachelor of Technology</h3>
+          <p class="edu-org">National Institute of Technology Agartala</p>
+          <p class="edu-desc">
+            Technology-oriented B.Tech student with hands-on experience in full-stack web
+            development, SaaS product development, database technologies and research-driven
+            data analysis. Actively shipping real products while studying.
+          </p>
+        </div>
+        <div class="edu-logo" aria-hidden="true">
+          <img src="assets/NITA.jpeg" alt="NIT Agartala logo" />
+        </div>
+      </article>
+    </section>
+
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="footer">
+    <div class="footer-inner reveal">
+      <div class="footer-left">
+        <p class="footer-name">Let's build<br />something<span class="hero-period">.</span></p>
+      </div>
+      <div class="footer-right">
+        <a href="mailto:bikan.ce.nita@gmail.com" class="footer-mail" data-cursor="hover">bikan.ce.nita@gmail.com</a>
+        <div class="footer-links">
+          <a href="https://github.com/bikan-chowdhury" target="_blank" rel="noopener" data-cursor="hover">GitHub ↗</a>
+          <a href="https://linkedin.com/in/bikan-chowdhury/" target="_blank" rel="noopener" data-cursor="hover">LinkedIn ↗</a>
+          <a href="Resume_Tech.pdf" target="_blank" rel="noopener" data-cursor="hover">Resume ↗</a>
+        </div>
+        <p class="footer-copy">© 2026 Bikan Chowdhury — designed &amp; built in-house</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
